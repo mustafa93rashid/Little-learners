@@ -1,0 +1,69 @@
+/* === Main Container for HeroRank Counters === */
+.MR-counterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Orange95);
+    gap: 13px;
+    padding: 24px 50px;
+    border: 1.5px solid var(--grey15);
+    border-radius: 12px;
+    margin-top: 60px;
+    box-shadow: 8px 8px 0px 1px rgba(255, 190, 153, 1);
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width: 1919px) {
+    .MR-counterContainer {
+        gap: 10px;
+        padding: 20px 40x;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .MR-counterContainer div h3 {
+        font-size: 34px;
+    }
+
+    .MR-counterContainer div p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .MR-counterContainer {
+        gap: 8px;
+        padding: 18px 28px;
+        border-radius: 8px;
+        margin-top: 42px;
+    }
+
+    .MR-counterContainer div h3 {
+        font-size: 24px;
+    }
+
+    .MR-counterContainer div p {
+        font-size: 12px;
+    }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+    .MR-counterContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
+        box-shadow: 4px 4px 0px 1px rgba(255, 190, 153, 1);
+    }
+
+    .MR-counterContainer div h3 {
+        font-size: 34px;
+    }
+
+    .MR-counterContainer div p {
+        font-size: 16px;
+    }
+}

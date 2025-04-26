@@ -1,0 +1,90 @@
+/* Main container for the accordion */
+.freAcc-container {
+    width: 100%;
+    background-color: var(--Orange95);
+    padding: 34px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1.5px solid var(--grey15);
+
+    /* Header of the accordion: question text and toggle button */
+    .freAcc-header {
+        display: flex;
+        justify-content: space-between;
+
+        /* Styling for the toggle button (plus/minus icon) */
+        button {
+            border-radius: 6px;
+            border: 1.5px solid #262626;
+            padding: 8px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+
+    /* Styling for the horizontal line inside the answer section */
+    .freAcc-answer hr {
+        width: 80.5447471%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+/* Active state styling when the accordion is open */
+.Mr-FreActive {
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+    padding: 40px;
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width:1919px) {
+    .freAcc-container {
+        width: 100%;
+        padding: 24px 30px;
+        border-radius: 10px;
+
+        .freAcc-header {
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            button {
+                border-radius: 4px;
+                padding: 6px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .freAcc-answer hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+    .freAcc-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 24px;
+    }
+
+    .freAcc-answer hr {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 100% !important;
+    }
+}

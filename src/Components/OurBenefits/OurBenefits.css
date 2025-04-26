@@ -1,0 +1,32 @@
+/* Container for all benefit cards */
+.Mr-benefitsAllCard {
+    display: flex;
+    flex-direction: column;
+    gap: 85px; 
+}
+
+.Mr-benfitRow{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width: 1919px) {
+    .Mr-benefitsAllCard {
+        gap: 68px; 
+    }
+    
+    .Mr-benfitRow{
+        gap: 40px;
+    }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+    .Mr-benfitRow{
+        width: 100%;
+        flex-direction: column;
+        gap: 68px;
+    }
+}

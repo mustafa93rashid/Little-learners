@@ -1,0 +1,86 @@
+/* Container for a single benefits card */
+.Mr-benefitsCardContainer {
+    padding: 80px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white-color);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border: 2px solid var(--grey15);
+    border-radius: 12px;
+    width: 100%;
+    position: relative;
+
+    /* Styling for the icon image inside the card */
+    img {
+        position: absolute;
+        left: 30px;
+        top: -32px;
+        padding: 20px;
+        border: 2px solid var(--grey15);
+        border-radius: 12px;
+        background-color: var(--Orange90);
+    }
+
+    /* Title inside the benefits card */
+    h3 {
+        color: var(--grey10);
+    }
+
+    /* Description paragraph inside the benefits card */
+    p {
+        color: var(--grey30);
+    }
+}
+
+/* ---------- Responsive styles for screens up to 1919px ---------- */
+@media (max-width: 1919px) {
+    .Mr-benefitsCardContainer {
+        padding: 58px 40px 38px;
+        gap: 16px;
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+        border-radius: 10px;
+
+        img {
+            left: 24px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: var(--grey10);
+            font-size: 24px;
+        }
+
+        p {
+            color: var(--grey30);
+            font-size: 16px;
+        }
+    }
+}
+
+/* ---------- Responsive styles for screens up to 992px (tablet and mobile view) ---------- */
+@media (max-width: 992px) {
+    .Mr-benefitsCardContainer {
+        padding: 58px 40px 38px;
+        gap: 16px;
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+        border-radius: 10px;
+
+        img {
+            left: 24px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: var(--grey10);
+            font-size: 24px;
+        }
+
+        p {
+            color: var(--grey30);
+            font-size: 16px;
+        }
+    }
+}

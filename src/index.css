@@ -1,0 +1,206 @@
+/* Google Fonts: Outfit, Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Start Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --orange65: #FF8D4D;
+  --orange70: #FF9E66;
+  --Orange75: #FFAE80;
+  --Orange80: #FFBE99;
+  --Orange90: #FFDECC;
+  --Orange95: #FFEFE5;
+  --Orange97: #FFF5F0;
+
+  --black04:#191919; 
+  --black05:#1E1E1E; 
+
+  --grey10: #1A1A1A; 
+  --grey15: #262626;
+  --grey20: #333333;
+  --grey30: #4C4C4D;
+  --grey40 :#656567;
+}
+
+
+/* Layout */
+.px-50{
+  padding-left: 2.60416667%;
+  padding-right: 2.60416667%;
+}
+
+.px-162-166{
+  padding-left: 8.4375%;
+  padding-right: 8.6458%;
+}
+
+.px-162 {
+  padding-left: 8.4375%;
+  padding-right: 8.4375%;
+}
+
+.mb-200{
+  margin-bottom: 10.4166667%;
+}
+
+.mb-100{
+  margin-bottom: 5.208333333%;
+}
+
+.mb-80{
+  margin-bottom: 4.16666667%;
+}
+
+.mt-18{
+  margin-top: 0.9375%;
+}
+
+.mt-200{
+  margin-top: 200px;
+}
+
+
+/* Typography */
+.fs-18{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-20{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+
+.fs-22{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.fs-22-6{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-24{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-28{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.fs-44{
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.fs-48{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.fs-54{
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.fs-58{
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+/*Start Responsive*/
+@media (max-width: 1919px) {
+  .px-162-166{
+    padding-left: 5.69444444%;
+    padding-right: 5.69444444%;
+  }
+  
+  .px-162 {
+    padding-left: 5.55555556%;
+    padding-right: 5.55555556%;
+  }
+  
+  .mb-200{
+    margin-bottom: 10.4166667%;
+  }
+  
+  .mb-100{
+    margin-bottom: 5.55555556%;
+  }
+  
+  .mb-80{
+    margin-bottom: 4.16666667%;
+  }
+  
+  .mt-18{
+    margin-top: 1.1111111%;
+  }  
+}
+
+@media (max-width: 992px) {
+  .px-50{
+    padding-left: 4.1025641%;
+    padding-right: 4.1025641%;
+  }
+  
+  .px-162-166{
+    padding-left: 4.1025641%;
+    padding-right: 4.1025641%;
+  }
+  
+  .px-162 {
+    padding-left: 4.1025641%;
+    padding-right: 4.1025641%;
+  }
+  
+  .mb-200{
+    margin-bottom: 20.5128205%;
+  }
+  
+  .mb-100{
+    margin-bottom: 12.8205128%;
+  }
+  
+  .mb-80{
+    margin-bottom: 12.8205128%;
+  }
+  
+  .mt-18{
+    margin-top: 10.2564103%;
+  }  
+}

@@ -1,0 +1,113 @@
+/* === Hero Section Container === */
+.Mr-heroContainer {
+  height: calc(100vh - 170px) ;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding-top: 150px;
+
+  img {
+    width: 48.1132075%;
+  }
+}
+
+/* === Subtitle / Upper Title in Hero === */
+.MR-heroUpperTitle {
+  color: var(--grey15);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* === Main Hero Title === */
+.MR-heroTitle {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 30px;
+
+  /* Animated gradient text */
+  background: linear-gradient(90deg, #FF9E66, #FFBE99, #FFDECC, #000);
+  background-size: 150% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: moveGradient 7s linear infinite;
+}
+
+/* === Gradient animation keyframes === */
+@keyframes moveGradient {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* === Highlighted Span inside Title === */
+.MR-heroTitle span {
+  font-family: "Raleway", sans-serif;
+  color: var(--orange65);
+}
+
+/* === Hero Paragraph / Description === */
+.MR-heroPargraph {
+  color: var(--grey20);
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width: 1919px) {
+  .Mr-heroContainer {
+    gap: 50px;
+    padding-top: 20px;
+  }
+
+  .MR-heroTitle {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .MR-heroUpperTitle {
+    font-size: 18px;
+  }
+
+  .MR-heroPargraph {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+  .Mr-heroContainer {
+    height: auto;
+    gap: 50px;
+    padding-top: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .Mr-heroContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .MR-heroTitle {
+    text-align: center;
+    padding-bottom: 18px;
+    font-size: 30px;
+  }
+
+  .MR-heroUpperTitle {
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .MR-heroPargraph {
+    text-align: center;
+  }
+}

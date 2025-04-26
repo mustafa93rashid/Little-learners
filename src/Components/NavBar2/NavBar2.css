@@ -1,0 +1,178 @@
+.MR-navContainer  {
+    width: 100%;
+    position: fixed;
+    top: 90px;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+.MR-navContainer.scrolled {
+    top: 10px;
+  }
+
+/* Container for the whole navbar */
+.MR-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: 1.5px solid var(--grey15);
+    border-radius: 12px;
+    background-color: var(--white-color);
+}
+
+/* Logo styling */
+.MR-navLogo {
+    width: 182.69px;
+    background-color: var(--orange65);
+    padding: 20px 24px;
+    border-right: 2px solid var(--grey15);
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+/* Navigation list container */
+.MR-navList {
+    display: flex;
+    list-style: none;
+}
+
+.MR-navList li {
+    background-color: var(--white-color);
+    padding: 20px 34px;
+    border-left: 1.5px solid var(--grey15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.MR-navList li:hover {
+  background-color: #FF8D4D;; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Special styling for "Contact" link */
+.Mr-contact {
+    background-color: #FFAE80 !important;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    cursor: pointer; 
+}
+
+.MR-navList li a {
+    color: var(--grey15);
+    text-decoration: none;
+}
+
+.Mr-toggleButton {
+    display: none;
+}
+
+/* Style for active navigation item */
+.Mr-active {
+    background-color: #FFEFE5 !important;
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width: 1919px) {
+
+    .MR-navContainer  {
+        position: sticky;
+        top: 90px; 
+    }
+    .MR-nav {
+        border-radius: 8px;
+    }
+
+    .MR-navLogo {
+        width: 155.29px;
+        padding: 16px 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .MR-navList li {
+        padding: 16px 29px;
+        font-size: 16px;
+    }
+
+    .Mr-contact {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+
+    .MR-nav {
+        border-radius: 8px;
+    }
+
+    .MR-navLogo {
+        width: 137.02px;
+        padding: 16px 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        z-index: 1000000;
+
+    }
+
+    .MR-navList li {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+
+    .Mr-contact {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .Mr-toggleButton {
+        display: block;
+        background-color: #FFEFE5;
+        padding: 16px 30px;
+        border-left: 1.5px solid var(--grey15);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .MR-navList {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background: var(--grey15);
+        transform: translateY(-100%);
+        transition: transform 0.6s ease, opacity 0.7s ease;
+    }
+
+    .MR-navList li {
+        border-radius: 8px;
+        width: 40%;
+    }
+
+    .MR-navList {
+        z-index: -1;
+    }
+
+    .Mr-toggleButton {
+        z-index: 1000;
+        width: 88px;
+        transition: transform 0.6s ease;
+    }
+
+    .Mr-toggleButton.rotate {
+        transform: rotate(180deg);
+      }
+
+    .MR-navList.open {
+        transform: translateY(0);
+        z-index: 999;
+    }
+}

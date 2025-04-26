@@ -1,0 +1,81 @@
+/* Container for the top navigation bar with centered content */
+.MR-nav1Container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 1.5px solid var(--grey15);
+    width: 100%;
+    top: 18px;
+    border-radius: 8px;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: var(--Orange90);
+}
+
+/* Decorative shape positioned at the top left */
+.MR-nav1Shape1{
+    position: absolute;
+    top: 0;
+    left: 28.6602529%;
+}
+
+/* Decorative shape positioned at the bottom right */
+.MR-nav1Shape2{
+    position: absolute;
+    bottom: 0;
+    right: 18.731171%;
+}
+
+/* Decorative shape positioned at the top right */
+.MR-nav1Shape3{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Decorative shape positioned at the very top left */
+.MR-nav1Shape4{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ---------- Responsive for screen <= 1919px ---------- */
+@media (max-width: 1919px) {
+    .MR-nav1Container p {
+        font-size: 16px;
+    }
+
+    .MR-nav1Shape1{
+        left: 23.8194444%;
+    }
+    
+    .MR-nav1Shape2{
+        right: 26.25%;
+    }
+}
+
+/* ---------- Responsive for screen <= 992px (mobile view) ---------- */
+@media (max-width: 992px) {
+    
+    .MR-nav1Container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .MR-nav1Shape1{
+        left: 0%;
+        width: 8.20512821%;
+    }
+    
+    .MR-nav1Shape2{
+        right: 0%;
+        width: 8.20512821%;
+    }
+
+    .MR-nav1Shape3, .MR-nav1Shape4{
+        width: 25%;
+        height: 100%;
+    }
+}

@@ -16,22 +16,22 @@ const NavBar1 = () => {
         {/* Decorative shape positioned at the top left */}
         <img
           className="MR-nav1Shape1"
-          src="/Navbar/Abstract Design.svg"
+          src="./Navbar/Abstract Design.svg"
           alt=""
         />
         <img
           className="MR-nav1Shape2"
-          src="/Navbar/Abstract Design (1).svg"
+          src="./Navbar/Abstract Design (1).svg"
           alt=""
         />
         <img
           className="MR-nav1Shape3"
-          src="/Navbar/Abstract Design (2).png"
+          src="./Navbar/Abstract Design (2).png"
           alt=""
         />
         <img
           className="MR-nav1Shape4"
-          src="/Navbar/Abstract Design (3).png"
+          src="./Navbar/Abstract Design (3).png"
           alt=""
         />
       </div>

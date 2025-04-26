@@ -1,16 +1,16 @@
 export const BenefitsData = [
     {
-      icon: "/Benfits/Union (1).svg",
+      icon: "./Benfits/Union (1).svg",
       title: "Holistic Learning Approach",
       desc: "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education."
     },
     {
-      icon: "/Benfits/crown.fill.svg",
+      icon: "./Benfits/crown.fill.svg",
       title: "Experienced Educators",
       desc: "Our passionate and qualified teachers create a supportive and stimulating learning environment."
     },
     {
-      icon: "/Benfits/facemask.fill.svg",
+      icon: "./Benfits/facemask.fill.svg",
       title: "Nurturing Environment",
       desc: "We prioritize safety and provide a warm and caring atmosphere for every child."
     },

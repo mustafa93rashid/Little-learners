@@ -6,6 +6,10 @@
     box-shadow: 6px 6px 0px 2px #1E1E1E;
     border-radius: 12px;
     border: 2px solid var(--grey15);
+    transition: all 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     img {
         margin-top: 30px;
@@ -33,6 +37,14 @@
     }
 }
 
+/* Hover Effect for Card */
+.Mr-NavigateCardContainer:hover {
+    transform: translateY(-8px); 
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-color: var(--orange65); 
+}
+
+/* Hover Effect */
 @media (max-width:1919px){
     .Mr-NavigateCardContainer {
         padding: 60px;
@@ -62,9 +74,15 @@
             font-size: 16px;
         }
     }
+
+    .Mr-NavigateCardContainer:hover {
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+    }
 }
 
-@media (max-width:1919px){
+
+
+@media (max-width:1440px){
     .Mr-NavigateCardContainer {
         width: 47%;
         padding: 55px;

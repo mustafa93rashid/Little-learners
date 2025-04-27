@@ -3,6 +3,7 @@ import TitleComponent from "../TitleComponent/TitleComponent";
 import "./OurBenefits.css";
 import { BenefitsData } from "../../Data/BenefitsData";
 
+
 const OurBenefits = () => {
   // Split the FAQ data into two parts: left and right sides
   const leftSideBenefitsData = BenefitsData.slice(0, 3);
@@ -15,6 +16,7 @@ const OurBenefits = () => {
         btnContnet="Children Deserve Bright Future"
         title="Our Benefits"
         descrption="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
+      className="mt_0"
       />
 
       {/* Container for all benefit cards */}

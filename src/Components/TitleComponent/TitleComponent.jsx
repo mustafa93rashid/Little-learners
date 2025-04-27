@@ -1,8 +1,8 @@
 import "./TitleComponent.css";
 
-const TitleComponent = ({ title, descrption, btnContnet }) => {
+const TitleComponent = ({ title, descrption, btnContnet, className}) => {
   return (
-    <div className="mb-100  MR-titleSection mt-200">
+    <div className={`mb-100 MR-titleSection mt-200 ${className}`}>
       {/* Small button-like text above the title */}
       <span className="fs-18">{btnContnet}</span>
 

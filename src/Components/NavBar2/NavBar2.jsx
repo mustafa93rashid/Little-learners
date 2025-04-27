@@ -60,6 +60,7 @@ const NavBar2 = () => {
         </ul>
 
         {/* Mobile menu toggle button */}
+        
         <img
           src={menuOpen ? "/Little-learners/Navbar/close.svg" : "/Little-learners/Navbar/Vector (Stroke).svg"}
           className={`Mr-toggleButton ${menuOpen ? "rotate" : ""}`}

@@ -1,66 +1,77 @@
+footer{
+    margin-bottom: 50px;
+}
+/* === Main Footer Container === */
 .MR-footer {
     background-color: var(--white-color);
-    margin-left: 2.604166666666667%;
-    margin-right: 2.604166666666667%;
-    margin-bottom: 2.604166666666667%;
-    border: 2px solid var(--grey15);
+    border: 1.5px solid var(--grey15);
     border-radius: 12px;
     box-shadow: 6px 6px 0px 2px #1E1E1E;
 }
 
+/* === Top Section of the Footer === */
 .MR-footer-top {
     display: flex;
-    align-items: stretch;
     gap: 80px;
-    margin: 100px;
+    margin: 100px 113px 50px  100px;
 }
 
-.MR-footer-top .MR-footer-info {
+/* Footer Info: Logo and Contact Info */
+.MR-footer-info {
     display: flex;
     flex-direction: column;
     gap: 50px;
     max-width: 512px;
 }
 
-.MR-footer-top .MR-footer-about {
+/* About Section (Logo + Description) */
+.MR-footer-about {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.MR-footer-top .MR-footer-about p {
+/* About Text Style */
+.MR-footer-about p {
     color: var(--grey30);
 }
 
-.MR-footer-top .MR-footer-logo {
-    width: 43.93063583815029%;
+/* Logo Size */
+.MR-footer-logo {
+    width: 43.93%;
 }
 
-.MR-footer-top .MR-footer-contact-list {
+/* Contact List Layout */
+.MR-footer-contact-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.MR-footer-top .MR-footer-contact-list .MR-footer-contact-item {
+/* Contact List Item */
+.MR-footer-contact-item {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.MR-footer-top .MR-footer-contact-list .MR-footer-contact-item a {
+/* Contact Links Style */
+.MR-footer-contact-item a {
     color: var(--grey15);
 }
 
+/* Contact Icons Style */
 .MR-footer-contact-item img {
-    min-width: 40px;
-    border: 2px solid var(--grey15);
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--grey15);
     padding: 8px;
     border-radius: 6px;
     background-color: var(--Orange97);
 }
 
-.MR-footer-top .MR-footer-links-section {
+/* === Footer Links Section === */
+.MR-footer-links-section {
     display: flex;
     justify-content: start;
     align-items: stretch;
@@ -69,41 +80,45 @@
     width: 100%;
 }
 
-.MR-footer-top .MR-footer-links-section h5 {
+/* Footer Links Section Title */
+.MR-footer-links-section h5 {
     color: var(--grey15);
 }
 
+/* Footer Links Style */
 .MR-footer-top ul li a {
     text-decoration: none;
     color: var(--grey20);
 }
 
+/* Individual Footer Links Column */
 .MR-footer-links-col {
-    flex: 1 1 calc(21.90954773869347% - 30px);
+    flex: 1 1 calc(21.9% - 30px);
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+/* Links List inside each Column */
 .MR-footer-links-col ul {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
+/* === Bottom Section of the Footer === */
 .MR-footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    margin-right: 6.043956043956044%;
-    margin-left: 6.043956043956044%;
+    margin: 0 6.04%;
     border-top: 1px solid var(--grey15);
     border-bottom: 1px solid black;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
+/* Remove default styles for UL in Footer */
 .MR-footer-top ul,
 .MR-footer-bottom ul {
     list-style: none;
@@ -111,136 +126,121 @@
     margin-bottom: 0;
 }
 
+/* Style for Lists in Bottom Section */
 .MR-footer-bottom ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    list-style: none;
-    margin-left: 0;
 }
 
+/* Privacy and Social Links Style */
 .MR-footer-bottom a {
     color: var(--grey60);
     text-decoration: none;
 }
 
+/* Social Icons Style */
 .MR-footer-social-list img {
     min-width: 24px;
     min-height: 24px;
-    border: 2px solid var(--grey15);
+    border: 1.5px solid var(--grey15);
     padding: 16px;
     border-radius: 8px;
     background-color: var(--Orange90);
 }
 
+/* Copyright Text */
 .MR-footer-copyright {
     text-align: center;
     color: var(--grey40);
     padding: 30px 0;
 }
 
-/* Media Queries */
+/* === Responsive Styles === */
 
+/* Large screens adjustments (max-width: 1919px) */
 @media (max-width: 1919px) {
-    .MR-footer-top {
-        margin: 80px 5.970149253731343%;
+    footer{
         margin-bottom: 40px;
     }
-
-    .MR-footer-top .MR-footer-about {
+    .MR-footer-top {
+        margin: 80px 80px 40px 80px;
+    }
+    .MR-footer-about {
         gap: 16px;
     }
-
     .MR-footer-top .MR-footer-logo {
-        width: 45.80152671755725%;
+        width: 45.8%;
     }
-
     .MR-footer-about p {
         font-size: 16px;
     }
-
     .MR-footer-contact-list {
         gap: 20px;
     }
-
     .MR-footer-contact-item a {
         font-size: 16px;
     }
-
     .MR-footer-contact-item img {
         max-width: 32px;
         max-height: 32px;
         padding: 6px;
         border-radius: 4px;
     }
-
     .MR-footer-links-col {
         gap: 20px;
     }
-
-    .MR-footer-top .MR-footer-links-section h5,
+    .MR-footer-links-section h5,
     .MR-footer-top ul li a {
         font-size: 16px;
     }
-
-    .MR-footer-top .MR-footer-links-section {
+    .MR-footer-links-section {
         gap: 20px;
     }
-
     .MR-footer-bottom {
-        margin-right: 5.970149253731343%;
-        margin-left: 5.970149253731343%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin: 0 6%;
+        padding: 20px 0;
     }
-
     .MR-footer-bottom a {
         font-size: 16px;
     }
-
     .MR-footer-bottom ul {
         gap: 10px;
     }
-
     .MR-footer-social-list img {
         padding: 12px;
         border-radius: 6px;
     }
-
     .MR-footer-copyright {
         font-size: 16px;
         padding: 20px 0;
     }
 }
 
+/* Tablet and mobile adjustments (max-width: 992px) */
 @media (max-width: 992px) {
-    .MR-footer {
-        margin-left: 4.102564102564103%;
-        margin-right: 4.102564102564103%;
-        margin-bottom: 5.128205128205128%;
+    footer{
+        margin-bottom: 20px;
     }
-
     .MR-footer-top {
-        margin: 60px 8.379888268156425%;
-        margin-bottom: 30px;
+        margin: 60px 30px 30px 30px;
         gap: 40px;
         flex-wrap: wrap;
     }
 
-    .MR-footer-top .MR-footer-about {
+    .MR-footer-about {
         align-items: center;
         text-align: center;
     }
 
-    .MR-footer-top .MR-footer-logo {
-        width: 61.0738255033557%;
+    .MR-footer-logo {
+        width: 61%;
     }
 
-    .MR-footer-top .MR-footer-info {
+    .MR-footer-info {
         gap: 40px;
     }
-
     .MR-footer-contact-item img {
         max-width: 32px;
         max-height: 32px;
@@ -248,15 +248,13 @@
         border-radius: 4px;
     }
 
-    .MR-footer-top .MR-footer-links-section {
+    .MR-footer-links-section {
         gap: 50px;
     }
 
     .MR-footer-bottom {
-        margin-right: 8.379888268156425%;
-        margin-left: 8.379888268156425%;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        margin: 0 8%;
+        padding: 16px 0;
         justify-content: center;
         gap: 20px;
     }
@@ -272,7 +270,7 @@
     .MR-footer-social-list img {
         padding: 6px;
     }
-
+    
     .MR-footer-copyright {
         font-size: 14px;
         padding: 16px 0;

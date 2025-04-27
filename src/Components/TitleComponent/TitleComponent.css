@@ -7,7 +7,6 @@
     gap: 19px;
 
     /* Styling for the <span> element (small button-like text) */
-
     span {
         width: fit-content;
         background-color: var(--white-color);
@@ -24,7 +23,6 @@
     }
 
     /* Styling for the <p> element (description) */
-
     .Mr-pargraph{
         color: var(--grey20);
         width: 62.3115578%;
@@ -35,6 +33,11 @@
         text-align: center;
     }
 }
+
+/* Utility class to remove the top margin in Our Benefits*/
+.mt_0 {
+    margin-top: 0 !important;
+  }
 
 
 /* ---------- Responsive for screen <= 1919px ---------- */

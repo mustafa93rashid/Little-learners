@@ -17,6 +17,8 @@ const HeroRank = () => {
         
         <p className="fs-18">Students Passed Out</p>
       </div>
+      
+      <span className="Mr-rankDivider"></span>
 
       {/* Second counter: Number of awards */}
       <div>
@@ -26,6 +28,9 @@ const HeroRank = () => {
         </h3>
         <p className="fs-18">Awards & Recognitions</p>
       </div>
+
+      <span className="Mr-rankDivider"></span>
+
 
       {/* Third counter: Number of experienced educators */}
       <div>

@@ -7,6 +7,7 @@
     flex-direction: column;
     border-radius: 12px;
     border: 1.5px solid var(--grey15);
+    transition: all 0.3s ease;
 
     /* Header of the accordion: question text and toggle button */
     .freAcc-header {
@@ -37,6 +38,14 @@
     background-color: white;
     transition: background-color 0.5s ease-in-out;
     padding: 40px;
+}
+
+
+/* Hover Effect */
+.freAcc-container:hover {
+    transform: translateY(-6px); 
+    box-shadow: 6px 6px 0px 2px #1E1E1E; 
+    border-color: var(--orange65); 
 }
 
 /* ---------- Responsive for screen <= 1919px ---------- */

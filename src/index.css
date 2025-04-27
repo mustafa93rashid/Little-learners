@@ -3,6 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff7e5f, #feb47b);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6a00, #ee0979);
+}
+
 /* Start Global */
 * {
   margin: 0;
@@ -82,6 +103,13 @@
 .fs-20{
   font-size: 20px;
   font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-20-6{
+  font-size: 20px;
+  font-weight: 600;
   line-height: 150%;
   letter-spacing: 0%;
 }
@@ -170,6 +198,11 @@
   .mt-18{
     margin-top: 1.1111111%;
   }  
+
+  .mt-200{
+    margin-top: 150px;
+  }
+  
 }
 
 @media (max-width: 992px) {
@@ -203,4 +236,10 @@
   .mt-18{
     margin-top: 10.2564103%;
   }  
+
+  .mt-200{
+    margin-top: 80px;
+  }
+  
 }
+

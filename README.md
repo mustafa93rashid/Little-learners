@@ -1,12 +1,22 @@
-# React + Vite
+Little-learners
+A modern and dynamic web page with smooth visual effects and enhanced user interactions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+🔵 Custom Scrollbar: Improved browsing experience with a visually tailored scrollbar.
 
-Currently, two official plugins are available:
+🖱️ Custom Mouse Cursor: A unique mouse pointer for a more personalized and professional browsing feel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 AOS Scroll Animations: Integrated AOS library to animate elements as they appear on scroll.
 
-## Expanding the ESLint configuration
+⏳ Loading Screen (Loader): A stylish loader that appears while the website content is loading.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⬆️ Scroll to Top Button: A button that appears after scrolling down, allowing users to quickly return to the top of the page.
+
+Technologies Used
+HTML5 / CSS3
+
+JavaScript
+
+AOS (Animate on Scroll) Library
+
+React Framework

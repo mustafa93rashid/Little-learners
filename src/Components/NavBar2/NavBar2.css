@@ -137,6 +137,7 @@
     }
 
     .MR-navList {
+        padding-top: 150px;
         flex-direction: column;
         justify-content: center;
         align-items: center;

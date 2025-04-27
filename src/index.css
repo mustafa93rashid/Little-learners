@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -21,8 +22,9 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff6a00, #ee0979);
+  background: linear-gradient(180deg, #ff6a00, #4C4C4D);
 }
+
 
 /* Start Global */
 * {
@@ -202,7 +204,6 @@ html {
   .mt-200{
     margin-top: 150px;
   }
-  
 }
 
 @media (max-width: 992px) {

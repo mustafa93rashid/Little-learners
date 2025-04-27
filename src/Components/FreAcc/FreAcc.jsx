@@ -13,7 +13,7 @@ const FreAcc = ({ question, answer }) => {
         <h3 className="fs-22-6">{question}</h3>
         <button onClick={() => setIsOpen(prev => !prev)}>
           <img
-            src={isOpen ? "./faq/minus.svg" : "./faq/plus.svg"}
+            src={isOpen ? "/Little-learners/faq/minus.svg" : "/Little-learners/faq/plus.svg"}
             alt={isOpen ? "Collapse" : "Expand"}
           />
         </button>

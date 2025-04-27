@@ -11,7 +11,7 @@ const OurBenefits = () => {
   return (
     <div className="px-162">
       {/* Section title with a button label, main title, and description */}
-      <TitleComponent
+      <TitleComponent 
         btnContnet="Children Deserve Bright Future"
         title="Our Benefits"
         descrption="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
@@ -19,7 +19,7 @@ const OurBenefits = () => {
 
       {/* Container for all benefit cards */}
       <div className="Mr-benefitsAllCard">
-        <div className="Mr-benfitRow" data-aos="fade-left">
+        <div className="Mr-benfitRow" data-aos="zoom-in-up">
           {leftSideBenefitsData.map((data, index) => (
             <OurBenefitsCard
               key={index}
@@ -29,7 +29,7 @@ const OurBenefits = () => {
             />
           ))}
         </div>
-        <div className="Mr-benfitRow" data-aos="fade-up-right">
+        <div className="Mr-benfitRow" data-aos="zoom-in-down">
         {rightSideBenefitsData.map((data, index) => (
           <OurBenefitsCard
             key={index}

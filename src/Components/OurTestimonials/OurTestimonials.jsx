@@ -78,7 +78,7 @@ const OurTestimonials = () => {
       <div className="Mr-TestimonialsAllCard" ref={sliderRef}>
         <div className="Mr-btnWrapper  Mr-btnWrapper1 ">
           <button className="Mr-TestimonialsBtn" onClick={handlePrev}>
-            <img src="./Testimonials/leftIcon.svg" alt="left" />
+            <img src="/Little-learners/Testimonials/leftIcon.svg" alt="left" />
           </button>
         </div>
 
@@ -102,7 +102,7 @@ const OurTestimonials = () => {
 
         <div className="Mr-btnWrapper Mr-btnWrapper2">
           <button className="Mr-TestimonialsBtn" onClick={handleNext}>
-            <img src="./Testimonials/RightIcon.svg" alt="right" />
+            <img src="/Little-learners/Testimonials/RightIcon.svg" alt="right" />
           </button>
         </div>
       </div>

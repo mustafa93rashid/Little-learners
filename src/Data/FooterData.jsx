@@ -72,19 +72,19 @@ export const FooterLinks = [
 
 export  const ContactInfo = [
     {
-        icon: "./Footer/mail.svg",
+        icon: "/Little-learners/Footer/mail.svg",
         alt: "Email Address",
         data: "hello@littlelearners.com",
         href: "mailto:hello@littlelearners.com"
     },
     {
-        icon: "./Footer/phone.svg",
+        icon: "/Little-learners/Footer/phone.svg",
         alt: "Phone Number",
         data: "+91 91813 23 2309",
         href: "tel:+91 91813 23 2309",
     },
     {
-        icon: "./Footer/zone.svg",
+        icon: "/Little-learners/Footer/zone.svg",
         alt: "Phone Number",
         data: "Somewhere in the World",
         href: "#",
@@ -93,17 +93,17 @@ export  const ContactInfo = [
 
 export const socialLinks = [
     {
-        icon: "./Footer/facebook.svg",
+        icon: "/Little-learners/Footer/facebook.svg",
         alt: "facebook",
         link: "#"
     },
     {
-        icon: "./Footer/x.svg",
+        icon: "/Little-learners/Footer/x.svg",
         alt: "twitter",
         link: "#"
     },
     {
-        icon: "./Footer/linkedln.svg",
+        icon: "/Little-learners/Footer/linkedln.svg",
         alt: "linkedin",
         link: "#"
     }

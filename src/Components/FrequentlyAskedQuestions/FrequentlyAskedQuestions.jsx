@@ -23,10 +23,9 @@ const FrequentlyAskedQuestions = () => {
         {/* Left side FAQs */}
         <div
           className="Mr-coloum"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
+          data-aos="fade-up"
+     data-aos-duration="3000">
+        
           {leftSideData.map((data, index) => (
             <FreAcc key={index} question={data.question} answer={data.answer} />
           ))}
@@ -35,10 +34,9 @@ const FrequentlyAskedQuestions = () => {
         {/* Right side FAQs */}
         <div
           className="Mr-coloum"
-          data-aos="fade-left"
-          data-aos-anchor="#example-anchor"
-          data-aos-offset="500"
-          data-aos-duration="500"
+          data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
         >
           {rightSideData.map((data, index) => (
             <FreAcc key={index} question={data.question} answer={data.answer} />

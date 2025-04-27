@@ -13,6 +13,8 @@
 
 /* ---------- Responsive for screen <= 1919px ---------- */
 @media (max-width: 1919px) {
+
+
     .Mr-benefitsAllCard {
         gap: 68px; 
     }
@@ -24,6 +26,7 @@
 
 /* ---------- Responsive for screen <= 992px (mobile view) ---------- */
 @media (max-width: 992px) {
+
     .Mr-benfitRow{
         width: 100%;
         flex-direction: column;

@@ -39,7 +39,7 @@ const NavBar2 = () => {
     <nav className={`px-50 MR-navContainer ${isScrolled ? "scrolled" : ""}`}>
       <div className="MR-nav">
         {/* Logo on the left side */}
-        <img src="./Navbar/Logo.svg" className="MR-navLogo" alt="logo" />
+        <img src="/Little-learners/Navbar/Logo.svg" className="MR-navLogo" alt="logo" />
 
         {/* Navigation links */}
         <ul className={`MR-navList ${menuOpen ? "open" : ""}`}>
@@ -61,7 +61,7 @@ const NavBar2 = () => {
 
         {/* Mobile menu toggle button */}
         <img
-          src={menuOpen ? "./Navbar/close.svg" : "./Navbar/Vector (Stroke).svg"}
+          src={menuOpen ? "/Little-learners/Navbar/close.svg" : "/Little-learners/Navbar/Vector (Stroke).svg"}
           className={`Mr-toggleButton ${menuOpen ? "rotate" : ""}`}
           alt="menu toggle"
           onClick={() => setMenuOpen(!menuOpen)}

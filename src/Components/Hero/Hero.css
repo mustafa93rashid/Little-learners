@@ -1,13 +1,13 @@
 /* === Hero Section Container === */
 .Mr-heroContainer {
-  height: calc(100vh - 170px) ;
+  height: 100vh;
   display: flex;
   gap: 80px;
   align-items: center;
-  padding-top: 150px;
 
   img {
     width: 48.1132075%;
+    height: 70%;
   }
 }
 
@@ -59,7 +59,6 @@
 @media (max-width: 1919px) {
   .Mr-heroContainer {
     gap: 50px;
-    padding-top: 20px;
   }
 
   .MR-heroTitle {

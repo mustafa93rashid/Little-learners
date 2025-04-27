@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="MR-footer-top">
         <div className="MR-footer-info">
           <div className="MR-footer-about">
-            <img className="MR-footer-logo" src="/Footer/Logo.svg" alt="logo" />
+            <img className="MR-footer-logo" src="/Little-learners/Footer/Logo.svg" alt="logo" />
             <p className="fs-20">
               We believe in the power of play to foster creativity,
               problem-solving skills, and imagination.

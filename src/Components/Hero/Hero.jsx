@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="Mr-heroContainer px-162 " data-aos="zoom-in-down">
     {/* Hero image */}
     <img 
-      src="./Hero/Image Container.jpg" 
+      src="/Little-learners/Hero/Image Container.jpg" 
       className="MR-heroImg" 
       alt="" 
     />

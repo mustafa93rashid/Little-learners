@@ -9,7 +9,7 @@ const FrequentlyAskedQuestions = () => {
   const rightSideData = FaqData.slice(4, 8);
 
   return (
-    <div className="px-162 Mr-margin">
+    <div className="px-162">
       {/* Section title and description */}
 
       <TitleComponent

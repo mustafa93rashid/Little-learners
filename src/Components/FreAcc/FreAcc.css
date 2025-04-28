@@ -33,22 +33,7 @@
     }
 }
 
-.freAcc-answer {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-  }
-  
-  .freAcc-answer hr, 
-  .freAcc-answer p {
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
-  .Mr-FreActive .freAcc-answer hr,
-  .Mr-FreActive .freAcc-answer p {
-    opacity: 1;
-  }
+
 
 /* Active state styling when the accordion is open */
 .Mr-FreActive {

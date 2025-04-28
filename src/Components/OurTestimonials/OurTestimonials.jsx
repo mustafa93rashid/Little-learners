@@ -1,108 +1,107 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import OurTestimonialsCard from "../OurTestimonialsCard/OurTestimonialsCard";
 import TitleComponent from "../TitleComponent/TitleComponent";
-import "./OurTestimonials.css";
 import { TestimonialsData } from "../../Data/TestimonialsData";
+import "./OurTestimonials.css";
 
 const OurTestimonials = () => {
+  // State to track the current starting index of visible testimonials
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // State to determine how many testimonial cards to show based on screen width
   const [cardsPerSlide, setCardsPerSlide] = useState(3);
-  const intervalRef = useRef(null);
-  const sliderRef = useRef(null);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev + 1 >= TestimonialsData.length ? 0 : prev + 1
-    );
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? TestimonialsData.length - 1 : prev - 1
-    );
-  };
-
-  const startAutoPlay = () => {
-    intervalRef.current = setInterval(() => {
-      handleNext();
-    }, 2000);
-  };
-
-  const stopAutoPlay = () => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
+  // Function to update number of cards per slide depending on window width
+  const updateCardsPerSlide = () => {
+    if (window.innerWidth <= 992) {
+      setCardsPerSlide(1); // Mobile view: show 1 card
+    } else {
+      setCardsPerSlide(3); // Desktop view: show 3 cards
     }
   };
 
+  // Effect to set up resize listener when component mounts
   useEffect(() => {
-    const updateCardsPerSlide = () => {
-      if (window.innerWidth < 992) {
-        setCardsPerSlide(1);
-      } else {
-        setCardsPerSlide(3);
-      }
-    };
-
-    updateCardsPerSlide();
-    window.addEventListener("resize", updateCardsPerSlide);
-    return () => window.removeEventListener("resize", updateCardsPerSlide);
-  }, []);
-
-  useEffect(() => {
-    startAutoPlay();
-    return () => stopAutoPlay();
-  }, []);
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-
-    slider.addEventListener("mouseenter", stopAutoPlay);
-    slider.addEventListener("mouseleave", startAutoPlay);
+    updateCardsPerSlide(); // Set initial cards count
+    window.addEventListener("resize", updateCardsPerSlide); // Update on resize
 
     return () => {
-      slider.removeEventListener("mouseenter", stopAutoPlay);
-      slider.removeEventListener("mouseleave", startAutoPlay);
+      window.removeEventListener("resize", updateCardsPerSlide); // Cleanup on unmount
     };
   }, []);
+
+  // Go to the next testimonial slide
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % TestimonialsData.length);
+  };
+
+  // Go to the previous testimonial slide
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + TestimonialsData.length) % TestimonialsData.length
+    );
+  };
+
+  // Determine which testimonial cards are currently visible
+  const visibleCards = [];
+  for (let i = 0; i < cardsPerSlide; i++) {
+    visibleCards.push(
+      TestimonialsData[(currentIndex + i) % TestimonialsData.length]
+    );
+  }
 
   return (
     <div className="px-162">
+      {/* Section Title */}
       <TitleComponent
         btnContnet="Their Happy Words 🤗"
         title="Our Testimonials"
         descrption="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
 
-      <div className="Mr-TestimonialsAllCard" ref={sliderRef}>
-        <div className="Mr-btnWrapper  Mr-btnWrapper1 ">
-          <button className="Mr-TestimonialsBtn" onClick={handlePrev}>
-            <img src="/Little-learners/Testimonials/leftIcon.svg" alt="left" />
+      <div className="Mr-TestimonialsAllCard" data-aos="zoom-in-down">
+        {/* Previous Button for Wide Screens */}
+        <div className="Mr-wideScreenButton">
+          <button className="Mr-TestimonialsBtn" onClick={prevSlide}>
+            <img
+              src="/Little-learners/Testimonials/leftIcon.svg"
+              alt="Previous"
+            />
           </button>
         </div>
 
-        <div className="Mr-sliderWrapper">
-          <div
-            className="Mr-sliderInner"
-            style={{
-              transform: `translateX(-${currentIndex * (100 / cardsPerSlide)}%)`,
-            }}
-          >
-            {TestimonialsData.map((data, index) => (
-              <OurTestimonialsCard
-                key={index}
-                icon={data.Image}
-                title={data.Name}
-                desc={data.desc}
+        {/* Slider Container */}
+        <div className="Mr-sliderCard">
+          {/* Render Visible Testimonial Cards */}
+          {visibleCards.map((data, index) => (
+            <OurTestimonialsCard
+              key={index}
+              icon={data.Image}
+              title={data.Name}
+              desc={data.desc}
+            />
+          ))}
+
+          {/* Buttons for Mobile View */}
+          <div className="Mr-mobileButton">
+            <button className="Mr-TestimonialsBtn" onClick={prevSlide}>
+              <img
+                src="/Little-learners/Testimonials/leftIcon.svg"
+                alt="Previous"
               />
-            ))}
+            </button>
+
+            <button className="Mr-TestimonialsBtn" onClick={nextSlide}>
+              <img src="/Little-learners/Testimonials/RightIcon.svg" alt="Next" />
+            </button>
           </div>
         </div>
 
-        <div className="Mr-btnWrapper Mr-btnWrapper2">
-          <button className="Mr-TestimonialsBtn" onClick={handleNext}>
-            <img src="/Little-learners/Testimonials/RightIcon.svg" alt="right" />
+        {/* Next Button for Wide Screens */}
+        <div className="Mr-wideScreenButton">
+          <button className="Mr-TestimonialsBtn" onClick={nextSlide}>
+            <img src="/Little-learners/Testimonials/RightIcon.svg" alt="Next" />
           </button>
         </div>
       </div>

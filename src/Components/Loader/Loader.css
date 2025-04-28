@@ -9,28 +9,39 @@
     align-items: center;
     justify-content: center;
     z-index: 9999999999999999999999; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    color: var(--grey20);
+    
   }
   
 
-  .loader {
-    width: 120px; 
-    aspect-ratio: 1; 
-    --c: linear-gradient(var(--orange65) 0 0);
-    --m: radial-gradient(farthest-side, #FFAE80 92%, #0000);
-    background: 
-      var(--c), var(--m),
-      var(--c), var(--m),
-      var(--c), var(--m);
-    background-size: 32px 60px, 32px 32px; 
-    background-repeat: no-repeat;
-    animation: l14 1s infinite alternate;
-  }
-  
-  @keyframes l14 {
-    0%,
-    10% {background-position: 0 0   ,0 100%,50% 0   ,50% 100%,100% 0   ,100% 100%}
-    33% {background-position: 0 100%,0 0   ,50% 0   ,50% 100%,100% 0   ,100% 100%}
-    66% {background-position: 0 100%,0 0   ,50% 100%,50% 0   ,100% 0   ,100% 100%}
-    90%,
-    100%{background-position: 0 100%,0 0   ,50% 100%,50% 0   ,100% 100%,100% 0   }
-  }
+.loader {
+  width: 120px;
+  aspect-ratio: 1;
+  color: var(--orange65);
+  position: relative;
+  background:
+    conic-gradient(from 134deg at top   ,currentColor 92deg,#0000 0) top,
+    conic-gradient(from -46deg at bottom,currentColor 92deg,#0000 0) bottom;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+.loader:before {
+  content:'';
+  position: absolute;
+  inset: 0;
+  --g:currentColor 14.5px,#0000 0 calc(100% - 14.5px),currentColor 0;
+  background:
+    linear-gradient( 45deg,var(--g)),
+    linear-gradient(-45deg,var(--g));
+   animation: l7 2s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l7 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
+}

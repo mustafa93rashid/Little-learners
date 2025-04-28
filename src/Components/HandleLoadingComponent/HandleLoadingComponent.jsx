@@ -10,12 +10,12 @@ export default function HandleLoadingComponent() {
     const handleLoad = () => {
       setTimeout(() => {
         AOS.init({
-          once: true, // Animation happens only once
-          duration: 1000, // Animation duration
+          once: true, 
+          duration: 3000, 
         });
         AOS.refresh();
         setLoading(false);
-      }, 2000);
+      }, 3000);
     };
 
     if (document.readyState === "complete") {
@@ -28,7 +28,7 @@ export default function HandleLoadingComponent() {
 
   return (
     <>
-      {loading ? <Loader /> : <div>{/* Main content goes here */}</div>}
+      {loading ? <Loader /> : <div></div>}
     </>
   );
 }

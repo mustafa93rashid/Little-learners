@@ -1,16 +1,22 @@
+/* Container for all testimonials and navigation buttons */
 .Mr-TestimonialsAllCard {
   width: 100%;
   display: flex;
   gap: 50px;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
 }
 
-.Mr-btnWrapper {
+/* Container for the testimonial cards */
+.Mr-sliderCard {
   display: flex;
+  gap: 50px;
+  justify-content: center;
   align-items: center;
 }
 
-.Mr-btnWrapper button {
+/* Style for navigation buttons (Previous / Next) */
+.Mr-TestimonialsBtn {
   background-color: var(--white-color);
   padding: 14px;
   border: 2px solid var(--grey20);
@@ -21,63 +27,57 @@
   justify-content: center;
 }
 
-.Mr-sliderWrapper {
-  overflow: hidden;
-  width: 100%;
+/* Mobile navigation buttons (hidden by default) */
+.Mr-mobileButton {
+  display: none;
 }
 
-.Mr-sliderInner {
-  display: flex;
-  transition: transform 0.6s ease;
-  gap: 30px;
-}
+/* ---------- Responsive Styles ---------- */
 
-.Mr-sliderInner>* {
-  flex: 0 0 calc(100% / 3.2);
-  max-width: calc(100% / 3);
-  box-sizing: border-box;
-  padding: 50px;
-}
-
-@media (max-width: 1440px) {
-  .Mr-sliderInner>* {
-    flex: 0 0 calc(100% / 3.25);
-  }
-}
-
-@media (max-width: 1200px) {
-  .Mr-sliderInner>* {
-    flex: 0 0 calc(100% / 3.35);
-
-  }
-}
-
-@media (max-width: 992px) {
+/* Screens smaller than 1919px */
+@media (max-width: 1919px) {
   .Mr-TestimonialsAllCard {
-    position: relative;
+    gap: 40px; 
+  }
+  
+  .Mr-sliderCard {
+    gap: 40px;
+  }
+  
+  .Mr-TestimonialsBtn {
+    padding: 12px;
+    border-radius: 8px;
+  }
+}
+
+/* Screens smaller than 1439px */
+@media (max-width: 1439px) {
+  .Mr-TestimonialsAllCard {
+    gap: 24px; 
+  }
+  
+  .Mr-sliderCard {
+    gap: 50px; 
+  }
+  
+  .Mr-TestimonialsBtn {
+    padding: 10px;
+  }
+}
+
+/* Screens smaller than 992px (Tablet & Mobile) */
+@media (max-width: 992px) {
+  .Mr-sliderCard {
+    flex-direction: column;
+    gap: 40px;
   }
 
-
-
-  .Mr-sliderInner {
-    gap: 10px;
+  .Mr-mobileButton {
+    display: flex;
+    gap: 20px;
   }
 
-  .Mr-sliderInner>* {
-    flex: 0 0 calc(100% / 0.7);
-    max-width: 100%;
-    padding: 30px;
-  }
-
-  .Mr-btnWrapper1 {
-    position: absolute;
-    bottom: -85px;
-    left: 30%;
-  }
-
-  .Mr-btnWrapper2 {
-    position: absolute;
-    bottom: -85px;
-    left: 60%;
+  .Mr-wideScreenButton {
+    display: none;
   }
 }
